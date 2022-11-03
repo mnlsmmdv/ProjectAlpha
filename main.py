@@ -14,6 +14,7 @@ Note: Uncomment codes to execute and comment them when not in use.
 # Importing libraries.
 from tkinter import *
 from tkinter import messagebox
+from webbrowser import *
 
 # This function displays about information box.
 def menubar_about_box():
