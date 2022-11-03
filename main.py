@@ -21,6 +21,23 @@ splash_screen.geometry("800x608") # Window dimensions.
 splash_screen.resizable(False, False) # Keeping constant window dimension size.
 splash_screen.configure(bg="#191414")
 
+# Splash screen menu bar and options.
+splash_screen_menubar = Menu(splash_screen)
+splash_screen.config(menu=splash_screen_menubar)
+splash_screen_menuFile = Menu(splash_screen_menubar, tearoff=0) # File menu.
+splash_screen_menubar.add_cascade(label="File", menu=splash_screen_menuFile)
+splash_screen_menuFile.add_command(label="Add New Login")
+splash_screen_menuFile.add_command(label="Add New Item")
+splash_screen_menuFile.add_separator()
+splash_screen_menuFile.add_command(label="Sync Wallet")
+splash_screen_menuFile.add_command(label="Export Wallet")
+splash_screen_menuFile.add_separator()
+splash_screen_menuFile.add_command(label="Sync Wallet")
+splash_screen_menuFile.add_command(label="Lock Wallet")
+splash_screen_menuFile.add_command(label="Log Out", command=quit)
+splash_screen_menuFile.add_separator()
+splash_screen_menuFile.add_command(label="Quit Project Alpha", command=quit)
+
 # Splash screen labels.
 splash_screen_label1 = Label(splash_screen, text="Project Alpha", font=("consolas bold", 20), bg="#191414", fg="#FFFFFF")
 splash_screen_label1.pack()
