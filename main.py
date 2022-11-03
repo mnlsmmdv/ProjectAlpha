@@ -59,6 +59,14 @@ splash_screen_menuView.add_command(label="Toggle Full Screen")
 splash_screen_menuView.add_separator()
 splash_screen_menuView.add_command(label="Reload")
 splash_screen_menuView.add_command(label="Toggle Developer Tools")
+splash_screen_menuAccount = Menu(splash_screen_menubar, tearoff=0) # Account menu.
+splash_screen_menubar.add_cascade(label="Account", menu=splash_screen_menuAccount)
+splash_screen_menuAccount.add_command(label="Premium Membership")
+splash_screen_menuAccount.add_command(label="Change Password")
+splash_screen_menuAccount.add_command(label="Two-Step Login")
+splash_screen_menuAccount.add_command(label="Secure Phrase")
+splash_screen_menuAccount.add_separator()
+splash_screen_menuAccount.add_command(label="Delete Account")
 
 # Splash screen labels.
 splash_screen_label1 = Label(splash_screen, text="Project Alpha", font=("consolas bold", 20), bg="#191414", fg="#FFFFFF")
