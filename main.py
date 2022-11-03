@@ -15,6 +15,10 @@ Note: Uncomment codes to execute and comment them when not in use.
 from tkinter import *
 from tkinter import messagebox
 
+# This function displays about information box.
+def menubar_about_box():
+    messagebox.showinfo(title="Project Alpha", message="Version:\nCommit:\nDate: 2022-11-03\nPython: 03.10.17\nOS: Windows_NT x64 10.0.22621\nSandboxed: No")
+
 # Splash screen window configurations.
 splash_screen = Tk()
 splash_screen.title("Project Alpha") # Window title.
