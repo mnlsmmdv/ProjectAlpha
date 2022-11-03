@@ -93,7 +93,7 @@ splash_screen_menuHelp.add_command(label="Get Mobile App")
 splash_screen_menuHelp.add_command(label="Get Browser Extension")
 splash_screen_menuHelp.add_separator()
 splash_screen_menuHelp.add_command(label="Check for Updates...")
-splash_screen_menuHelp.add_command(label="About Project Alpha")
+splash_screen_menuHelp.add_command(label="About Project Alpha", command=menubar_about_box)
 
 # Splash screen labels.
 splash_screen_label1 = Label(splash_screen, text="Project Alpha", font=("consolas bold", 20), bg="#191414", fg="#FFFFFF")
