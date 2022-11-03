@@ -37,6 +37,18 @@ splash_screen_menuFile.add_command(label="Lock Wallet")
 splash_screen_menuFile.add_command(label="Log Out", command=quit)
 splash_screen_menuFile.add_separator()
 splash_screen_menuFile.add_command(label="Quit Project Alpha", command=quit)
+splash_screen_menuEdit = Menu(splash_screen_menubar, tearoff=0) # Edit menu.
+splash_screen_menubar.add_cascade(label="Edit", menu=splash_screen_menuEdit)
+splash_screen_menuEdit.add_command(label="Undo")
+splash_screen_menuEdit.add_command(label="Redo")
+splash_screen_menuEdit.add_separator()
+splash_screen_menuEdit.add_command(label="Cut")
+splash_screen_menuEdit.add_command(label="Copy")
+splash_screen_menuEdit.add_command(label="Paste")
+splash_screen_menuEdit.add_separator()
+splash_screen_menuEdit.add_command(label="Copy Username")
+splash_screen_menuEdit.add_command(label="Copy Password")
+splash_screen_menuEdit.add_command(label="Copy Verification Code (TOTP)")
 
 # Splash screen labels.
 splash_screen_label1 = Label(splash_screen, text="Project Alpha", font=("consolas bold", 20), bg="#191414", fg="#FFFFFF")
