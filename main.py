@@ -49,6 +49,16 @@ splash_screen_menuEdit.add_separator()
 splash_screen_menuEdit.add_command(label="Copy Username")
 splash_screen_menuEdit.add_command(label="Copy Password")
 splash_screen_menuEdit.add_command(label="Copy Verification Code (TOTP)")
+splash_screen_menuView = Menu(splash_screen_menubar, tearoff=0) # View menu.
+splash_screen_menubar.add_cascade(label="View", menu=splash_screen_menuView)
+splash_screen_menuView.add_command(label="Zoom In")
+splash_screen_menuView.add_command(label="Zoom Out")
+splash_screen_menuView.add_command(label="Reset Zoom")
+splash_screen_menuView.add_separator()
+splash_screen_menuView.add_command(label="Toggle Full Screen")
+splash_screen_menuView.add_separator()
+splash_screen_menuView.add_command(label="Reload")
+splash_screen_menuView.add_command(label="Toggle Developer Tools")
 
 # Splash screen labels.
 splash_screen_label1 = Label(splash_screen, text="Project Alpha", font=("consolas bold", 20), bg="#191414", fg="#FFFFFF")
