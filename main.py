@@ -10,3 +10,6 @@ Credits to:
 Credits to link: 
 Note: Uncomment codes to execute and comment them when not in use.
 """
+
+# Importing libraries.
+from tkinter import *
