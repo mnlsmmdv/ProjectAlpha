@@ -21,6 +21,14 @@ splash_screen.geometry("800x608") # Window dimensions.
 splash_screen.resizable(False, False) # Keeping constant window dimension size.
 splash_screen.configure(bg="#191414")
 
+# Splash screen labels.
+splash_screen_label1 = Label(splash_screen, text="Project Alpha", font=("consolas bold", 20), bg="#191414", fg="#FFFFFF")
+splash_screen_label1.pack()
+splash_screen_label1.place(x=300, y=255) # Label placement.
+splash_screen_label2 = Label(splash_screen, text="Welcome to the official Project Alpha app\nIt's fast and secure", font=("consolas", 11), bg="#191414", fg="#555555")
+splash_screen_label2.pack()
+splash_screen_label2.place(x=235, y=320) # Label placement.
+
 # Configurations to center splash screen window on initial run.
 splash_screen.update() # Refreshes the window.
 splash_screen_width = splash_screen.winfo_width() # Retrieves the window width.
