@@ -13,6 +13,7 @@ Note: Uncomment codes to execute and comment them when not in use.
 
 # Importing libraries.
 from tkinter import *
+from tkinter import messagebox
 
 # Splash screen window configurations.
 splash_screen = Tk()
