@@ -67,6 +67,13 @@ splash_screen_menuAccount.add_command(label="Two-Step Login")
 splash_screen_menuAccount.add_command(label="Secure Phrase")
 splash_screen_menuAccount.add_separator()
 splash_screen_menuAccount.add_command(label="Delete Account")
+splash_screen_menuWindow = Menu(splash_screen_menubar, tearoff=0) # Window menu.
+splash_screen_menubar.add_cascade(label="Window", menu=splash_screen_menuWindow)
+splash_screen_menuWindow.add_command(label="Minimize")
+splash_screen_menuWindow.add_command(label="Hide to Tray")
+splash_screen_menuWindow.add_command(label="Maximize")
+splash_screen_menuWindow.add_separator()
+splash_screen_menuWindow.add_command(label="Close", command=quit)
 
 # Splash screen labels.
 splash_screen_label1 = Label(splash_screen, text="Project Alpha", font=("consolas bold", 20), bg="#191414", fg="#FFFFFF")
