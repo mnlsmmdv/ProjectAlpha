@@ -21,7 +21,7 @@ def menubar_about_box():
     messagebox.showinfo(title="Project Alpha", message="Version:\nCommit:\nDate: 2022-11-03\nPython: 03.10.17\nOS: Windows_NT x64 10.0.22621\nSandboxed: No")
 
 # This function will display main window.
-def main_gui_window():
+def overview_gui_window():
     login_window.destroy() # Closing old window.
 
     # Main window configurations.
@@ -74,7 +74,7 @@ def login_gui_window():
     login_window_radio_button = Radiobutton(login_window, text="Remember Me", font=("consolas", 11), bg="#191414", fg="#555555") # Remember me radio button.
     login_window_radio_button.pack()
     login_window_radio_button.place(x=250, y=280) # Remember me radio button placement.
-    login_window_button = Button(login_window, text="LOG IN", font=("consolas bold", 11), bg="#1DB954", fg="#FFFFFF", height=2, width=5, command=main_gui_window) # Button for login window.
+    login_window_button = Button(login_window, text="LOG IN", font=("consolas bold", 11), bg="#1DB954", fg="#FFFFFF", height=2, width=5, command=overview_gui_window) # Button for login window.
     login_window_button.place(x=330, y=325, width=130)  # Button placement.
 
     # Configurations to center login window on initial run.
