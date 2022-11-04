@@ -32,6 +32,11 @@ def overview_gui_window():
     overview_window.resizable(False, False) # Keeping constant window dimension size.
     overview_window.configure(bg="#191414")
 
+    # Displays overview window labels.
+    overview_window_label1 = Label(overview_window, text="Overview", font=("consolas bold", 20), bg="#191414", fg="#FFFFFF", width=24, height=2)
+    overview_window_label1.pack()
+    overview_window_label1.place(x=200, y=0) # Label placement.
+
     # Configurations to center overview window on initial run.
     overview_window.update() # Refreshes the window.
     overview_window_width = overview_window.winfo_width() # Retrieves the window width.
