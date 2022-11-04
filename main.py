@@ -20,6 +20,18 @@ import webbrowser
 def menubar_about_box():
     messagebox.showinfo(title="Project Alpha", message="Version:\nCommit:\nDate: 2022-11-03\nPython: 03.10.17\nOS: Windows_NT x64 10.0.22621\nSandboxed: No")
 
+# This function will display login window.
+def login_gui_window():
+    splash_screen.destroy() # Closing old window.
+    
+    # Login Window configurations.
+    global login_window
+    login_window = Tk()
+    login_window.title("Project Alpha") # Window title.
+    login_window.geometry("800x608") # Window dimensions.
+    login_window.resizable(False, False) # Keeping constant window dimension size.
+    login_window.configure(bg="#191414")
+
 # Splash screen window configurations.
 splash_screen = Tk()
 splash_screen.title("Project Alpha") # Window title.
