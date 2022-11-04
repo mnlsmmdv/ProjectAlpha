@@ -55,6 +55,16 @@ def login_gui_window():
     login_window_button = Button(login_window, text="LOG IN", font=("consolas bold", 11), bg="#1DB954", fg="#FFFFFF", height=2, width=5) # Button for login window.
     login_window_button.place(x=330, y=325, width=130)  # Button placement.
 
+    # Configurations to center login window on initial run.
+    login_window.update() # Refreshes the window.
+    login_window_width = login_window.winfo_width() # Retrieves the window width.
+    login_window_height = login_window.winfo_height() # Retrieves the window height.
+    screen_width = login_window.winfo_screenwidth() # Retrieves the screen width.
+    screen_height = login_window.winfo_screenheight() # Retrieves the screen height.
+    x = int((screen_width / 2) - (login_window_width / 2)) # Calculates x-axis.
+    y = int((screen_height / 2) - (login_window_height / 2)) # Calculates y-axis.
+    login_window.geometry(f"{login_window_width}x{login_window_height}+{x}+{y}") # Sets the window size to any screen center.
+
 # Splash screen window configurations.
 splash_screen = Tk()
 splash_screen.title("Project Alpha") # Window title.
