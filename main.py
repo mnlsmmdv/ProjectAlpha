@@ -24,7 +24,7 @@ def menubar_about_box():
 def overview_gui_window():
     login_window.destroy() # Closing old window.
 
-    # Main window configurations.
+    # Overview window configurations.
     global overview_window
     overview_window = Tk()
     overview_window.title("Project Alpha") # Window title.
@@ -32,7 +32,7 @@ def overview_gui_window():
     overview_window.resizable(False, False) # Keeping constant window dimension size.
     overview_window.configure(bg="#191414")
 
-    # Configurations to center main window on initial run.
+    # Configurations to center overview window on initial run.
     overview_window.update() # Refreshes the window.
     overview_window_width = overview_window.winfo_width() # Retrieves the window width.
     overview_window_height = overview_window.winfo_height() # Retrieves the window height.
