@@ -35,12 +35,12 @@ def overview_gui_window():
     # Configurations to center main window on initial run.
     overview_window.update() # Refreshes the window.
     overview_window_width = overview_window.winfo_width() # Retrieves the window width.
-    main_window_height = overview_window.winfo_height() # Retrieves the window height.
+    overview_window_height = overview_window.winfo_height() # Retrieves the window height.
     screen_width = overview_window.winfo_screenwidth() # Retrieves the screen width.
     screen_height = overview_window.winfo_screenheight() # Retrieves the screen height.
     x = int((screen_width / 2) - (overview_window_width / 2)) # Calculates x-axis.
-    y = int((screen_height / 2) - (main_window_height / 2)) # Calculates y-axis.
-    overview_window.geometry(f"{overview_window_width}x{main_window_height}+{x}+{y}") # Sets the window size to any screen center.
+    y = int((screen_height / 2) - (overview_window_height / 2)) # Calculates y-axis.
+    overview_window.geometry(f"{overview_window_width}x{overview_window_height}+{x}+{y}") # Sets the window size to any screen center.
 
 # This function will display login window.
 def login_gui_window():
