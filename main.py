@@ -25,22 +25,22 @@ def overview_gui_window():
     login_window.destroy() # Closing old window.
 
     # Main window configurations.
-    global main_window
-    main_window = Tk()
-    main_window.title("Project Alpha") # Window title.
-    main_window.geometry("800x608") # Window dimensions.
-    main_window.resizable(False, False) # Keeping constant window dimension size.
-    main_window.configure(bg="#191414")
+    global overview_window
+    overview_window = Tk()
+    overview_window.title("Project Alpha") # Window title.
+    overview_window.geometry("800x608") # Window dimensions.
+    overview_window.resizable(False, False) # Keeping constant window dimension size.
+    overview_window.configure(bg="#191414")
 
     # Configurations to center main window on initial run.
-    main_window.update() # Refreshes the window.
-    main_window_width = main_window.winfo_width() # Retrieves the window width.
-    main_window_height = main_window.winfo_height() # Retrieves the window height.
-    screen_width = main_window.winfo_screenwidth() # Retrieves the screen width.
-    screen_height = main_window.winfo_screenheight() # Retrieves the screen height.
+    overview_window.update() # Refreshes the window.
+    main_window_width = overview_window.winfo_width() # Retrieves the window width.
+    main_window_height = overview_window.winfo_height() # Retrieves the window height.
+    screen_width = overview_window.winfo_screenwidth() # Retrieves the screen width.
+    screen_height = overview_window.winfo_screenheight() # Retrieves the screen height.
     x = int((screen_width / 2) - (main_window_width / 2)) # Calculates x-axis.
     y = int((screen_height / 2) - (main_window_height / 2)) # Calculates y-axis.
-    main_window.geometry(f"{main_window_width}x{main_window_height}+{x}+{y}") # Sets the window size to any screen center.
+    overview_window.geometry(f"{main_window_width}x{main_window_height}+{x}+{y}") # Sets the window size to any screen center.
 
 # This function will display login window.
 def login_gui_window():
