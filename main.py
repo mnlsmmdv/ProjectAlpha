@@ -32,6 +32,16 @@ def main_gui_window():
     main_window.resizable(False, False) # Keeping constant window dimension size.
     main_window.configure(bg="#191414")
 
+    # Configurations to center main window on initial run.
+    main_window.update() # Refreshes the window.
+    main_window_width = main_window.winfo_width() # Retrieves the window width.
+    main_window_height = main_window.winfo_height() # Retrieves the window height.
+    screen_width = main_window.winfo_screenwidth() # Retrieves the screen width.
+    screen_height = main_window.winfo_screenheight() # Retrieves the screen height.
+    x = int((screen_width / 2) - (main_window_width / 2)) # Calculates x-axis.
+    y = int((screen_height / 2) - (main_window_height / 2)) # Calculates y-axis.
+    main_window.geometry(f"{main_window_width}x{main_window_height}+{x}+{y}") # Sets the window size to any screen center.
+
 # This function will display login window.
 def login_gui_window():
     splash_screen.destroy() # Closing old window.
