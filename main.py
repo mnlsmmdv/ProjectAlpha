@@ -125,7 +125,7 @@ screen_height = splash_screen.winfo_screenheight() # Retrieves the screen height
 x = int((screen_width / 2) - (splash_screen_width / 2)) # Calculates x-axis.
 y = int((screen_height / 2) - (splash_screen_height / 2)) # Calculates y-axis.
 splash_screen.geometry(f"{splash_screen_width}x{splash_screen_height}+{x}+{y}") # Sets the window size to any screen center.
-splash_screen_button1 = Button(splash_screen, text="START REQUESTING", font=("consolas bold", 11), bg="#1DB954", fg="#FFFFFF", width=5, height=2) # Button for splash screen.
+splash_screen_button1 = Button(splash_screen, text="START REQUESTING", font=("consolas bold", 11), bg="#1DB954", fg="#FFFFFF", width=5, height=2, command=login_gui_window) # Button for splash screen.
 splash_screen_button1.place(x=335, y=410, width=145) # Button placement.
 
 # Loops all windows.
