@@ -32,6 +32,14 @@ def login_gui_window():
     login_window.resizable(False, False) # Keeping constant window dimension size.
     login_window.configure(bg="#191414")
 
+    # Displays login window labels.
+    login_window_label1 = Label(login_window, text="Login", font=("consolas bold", 20), bg="#191414", fg="#FFFFFF", width=24, height=2)
+    login_window_label1.pack()
+    login_window_label1.place(x=210, y=100) # Label placement.
+    login_window_label2 = Label(login_window, text="We're so excited to see you again!", font=("consolas", 11), bg="#191414", fg="#555555")
+    login_window_label2.pack()
+    login_window_label2.place(x=255, y=160) # Label placement.
+
 # Splash screen window configurations.
 splash_screen = Tk()
 splash_screen.title("Project Alpha") # Window title.
