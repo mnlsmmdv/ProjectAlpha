@@ -40,6 +40,21 @@ def login_gui_window():
     login_window_label2.pack()
     login_window_label2.place(x=255, y=160) # Label placement.
 
+    # Login window's username, password entry and login button.
+    login_window_username_entry = Entry(login_window, font=("consolas", 11), bg="#555555", fg="#FFFFFF",  highlightthickness=0, highlightbackground="#555555", width=35) # Username entry
+    #login_window_username_entry.insert(0, "Username")
+    login_window_username_entry.pack()
+    login_window_username_entry.place(x=249, y=200) # Entry placement.
+    login_window_password_entry = Entry(login_window, font=("consolas", 11), show="*", bg="#555555", fg="#FFFFFF",  highlightthickness=0, highlightbackground="#555555", width=35) # Password entry
+    #login_window_password_entry.insert(0, "Password")
+    login_window_password_entry.pack()
+    login_window_password_entry.place(x=249, y=245) # Entry placement.
+    login_window_radio_button = Radiobutton(login_window, text="Remember Me", font=("consolas", 11), bg="#191414", fg="#555555") # Remember me radio button.
+    login_window_radio_button.pack()
+    login_window_radio_button.place(x=250, y=280) # Remember me radio button placement.
+    login_window_button = Button(login_window, text="LOG IN", font=("consolas bold", 11), bg="#1DB954", fg="#FFFFFF", height=2, width=5) # Button for login window.
+    login_window_button.place(x=330, y=325, width=130)  # Button placement.
+
 # Splash screen window configurations.
 splash_screen = Tk()
 splash_screen.title("Project Alpha") # Window title.
